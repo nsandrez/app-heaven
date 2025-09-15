@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-urban;
+  }
+}
+
+/* Filtros de logo */
+.logo-rojo {
+  filter: brightness(0) saturate(100%) invert(17%) sepia(90%) saturate(7471%) hue-rotate(0deg) brightness(93%) contrast(123%);
+}
+
+.logo-blanco {
+  filter: brightness(0) invert(1);
+}
+
+/* Extra hover para íconos */
+.group:hover #toggle-icon {
+  content: "-";
+}
+
+.tiktok-embed {
+    background: transparent !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+}
+.tiktok-embed section {
+    background: black !important;
+}
+
